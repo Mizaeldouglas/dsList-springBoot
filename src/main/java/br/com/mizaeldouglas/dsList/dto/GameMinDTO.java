@@ -1,6 +1,7 @@
 package br.com.mizaeldouglas.dsList.dto;
 
 import br.com.mizaeldouglas.dsList.entities.Game;
+import br.com.mizaeldouglas.dsList.projections.GameMinProjection;
 import jakarta.persistence.Column;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,5 +22,13 @@ public class GameMinDTO {
         year = entities.getYear();
         imgUrl = entities.getImgUrl();
         shortDescription = entities.getShortDescription();
+    }
+
+    public GameMinDTO(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 }
