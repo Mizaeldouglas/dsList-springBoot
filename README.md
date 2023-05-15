@@ -46,7 +46,7 @@ Neste projeto foram usadas essas tecnologias:
 
 ## Clonar o repositório
 ```bash
-git clone https://github.com/Mizaeldouglas/Api_Rest_SpringBoot_Portifolio.git
+git clone https://github.com/Mizaeldouglas/dsList-springBoot.git
 ```
 
 
